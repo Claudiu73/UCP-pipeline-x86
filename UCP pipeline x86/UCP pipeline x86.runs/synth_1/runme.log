@@ -1,0 +1,526 @@
+
+*** Running vivado
+    with args -log main.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source main.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source main.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental {C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/utils_1/imports/synth_1/main.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/utils_1/imports/synth_1/main.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top main -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 14108
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1827.566 ; gain = 408.453
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'main' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:47]
+INFO: [Synth 8-3491] module 'MPG' declared at 'C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/MPG.vhd:26' bound to instance 'InstructionButton' of component 'MPG' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:180]
+INFO: [Synth 8-638] synthesizing module 'MPG' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/MPG.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'MPG' (0#1) [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/MPG.vhd:32]
+INFO: [Synth 8-3491] module 'MPG' declared at 'C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/MPG.vhd:26' bound to instance 'ResetButton' of component 'MPG' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:181]
+INFO: [Synth 8-3491] module 'SSD' declared at 'C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/SSD.vhd:34' bound to instance 'display' of component 'SSD' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:186]
+INFO: [Synth 8-638] synthesizing module 'SSD' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/SSD.vhd:44]
+INFO: [Synth 8-226] default block is never used [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/SSD.vhd:63]
+INFO: [Synth 8-226] default block is never used [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/SSD.vhd:78]
+INFO: [Synth 8-226] default block is never used [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/SSD.vhd:91]
+INFO: [Synth 8-256] done synthesizing module 'SSD' (0#1) [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/SSD.vhd:44]
+INFO: [Synth 8-3491] module 'IFetch' declared at 'C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/IFetch.vhd:35' bound to instance 'IF_sim' of component 'IFetch' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:188]
+INFO: [Synth 8-638] synthesizing module 'IFetch' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/IFetch.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'IFetch' (0#1) [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/IFetch.vhd:46]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:193]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:203]
+INFO: [Synth 8-3491] module 'Decode' declared at 'C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/Decode.vhd:35' bound to instance 'uut' of component 'Decode' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:216]
+INFO: [Synth 8-638] synthesizing module 'Decode' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/Decode.vhd:49]
+INFO: [Synth 8-3491] module 'X86_Registers' declared at 'C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/X86_Registers.vhd:36' bound to instance 'registers' of component 'X86_Registers' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/Decode.vhd:156]
+INFO: [Synth 8-638] synthesizing module 'X86_Registers' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/X86_Registers.vhd:50]
+WARNING: [Synth 8-614] signal 'RegWriteData' is read in the process but is not in the sensitivity list [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/X86_Registers.vhd:100]
+INFO: [Synth 8-256] done synthesizing module 'X86_Registers' (0#1) [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/X86_Registers.vhd:50]
+INFO: [Synth 8-3491] module 'DataMemory' declared at 'C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/DataMemory.vhd:35' bound to instance 'data_memory_instance' of component 'DataMemory' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/Decode.vhd:187]
+INFO: [Synth 8-638] synthesizing module 'DataMemory' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/DataMemory.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'DataMemory' (0#1) [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/DataMemory.vhd:45]
+WARNING: [Synth 8-614] signal 'instruction' is read in the process but is not in the sensitivity list [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/Decode.vhd:197]
+WARNING: [Synth 8-614] signal 'instruction' is read in the process but is not in the sensitivity list [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/Decode.vhd:208]
+INFO: [Synth 8-256] done synthesizing module 'Decode' (0#1) [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/Decode.vhd:49]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:221]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:230]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:237]
+INFO: [Synth 8-3491] module 'ALU_component' declared at 'C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/ALU_component.vhd:28' bound to instance 'execute_sim' of component 'ALU_component' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:242]
+INFO: [Synth 8-638] synthesizing module 'ALU_component' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/ALU_component.vhd:37]
+INFO: [Synth 8-256] done synthesizing module 'ALU_component' (0#1) [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/ALU_component.vhd:37]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:247]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:253]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:259]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:265]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:271]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:277]
+INFO: [Synth 8-3491] module 'WriteBack' declared at 'C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/WriteBack.vhd:33' bound to instance 'WB_sim' of component 'WriteBack' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:285]
+INFO: [Synth 8-638] synthesizing module 'WriteBack' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/WriteBack.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'WriteBack' (0#1) [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/WriteBack.vhd:42]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:290]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:296]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:300]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:306]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:309]
+INFO: [Synth 8-256] done synthesizing module 'main' (0#1) [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:47]
+WARNING: [Synth 8-3848] Net NextAdress in module/entity IFetch does not have driver. [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/IFetch.vhd:72]
+WARNING: [Synth 8-6014] Unused sequential element opcode_reg was removed.  [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/Decode.vhd:100]
+WARNING: [Synth 8-6014] Unused sequential element address_reg was removed.  [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/Decode.vhd:103]
+WARNING: [Synth 8-3848] Net RegWriteData in module/entity Decode does not have driver. [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/Decode.vhd:54]
+WARNING: [Synth 8-3848] Net RegWriteBack in module/entity Decode does not have driver. [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/Decode.vhd:55]
+WARNING: [Synth 8-3848] Net mem_address in module/entity Decode does not have driver. [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/Decode.vhd:63]
+WARNING: [Synth 8-3848] Net mem_write_en in module/entity Decode does not have driver. [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/Decode.vhd:65]
+WARNING: [Synth 8-6014] Unused sequential element PCincIfId_reg was removed.  [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:160]
+WARNING: [Synth 8-6014] Unused sequential element InstrIfId_reg was removed.  [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:161]
+WARNING: [Synth 8-6014] Unused sequential element RD1IdEx_reg was removed.  [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:163]
+WARNING: [Synth 8-6014] Unused sequential element RD2IdEx_reg was removed.  [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:164]
+WARNING: [Synth 8-6014] Unused sequential element RegWriteBackIdEx_reg was removed.  [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:165]
+WARNING: [Synth 8-6014] Unused sequential element opcodeIdEx_reg was removed.  [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:166]
+WARNING: [Synth 8-6014] Unused sequential element target_regIdEx_reg was removed.  [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:167]
+WARNING: [Synth 8-6014] Unused sequential element source_regIdEx_reg was removed.  [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:168]
+WARNING: [Synth 8-6014] Unused sequential element addressIdEx_reg was removed.  [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:169]
+WARNING: [Synth 8-6014] Unused sequential element memSauAluIdEx_reg was removed.  [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:170]
+WARNING: [Synth 8-6014] Unused sequential element data_outIdEx_reg was removed.  [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:171]
+WARNING: [Synth 8-6014] Unused sequential element ALUOpIdEx_reg was removed.  [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:172]
+WARNING: [Synth 8-6014] Unused sequential element ALUResExWb_reg was removed.  [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:174]
+WARNING: [Synth 8-6014] Unused sequential element RegWriteDataExWb_reg was removed.  [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:175]
+WARNING: [Synth 8-3848] Net sw in module/entity main does not have driver. [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:39]
+WARNING: [Synth 8-3848] Net led in module/entity main does not have driver. [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:41]
+WARNING: [Synth 8-3848] Net tb_we in module/entity main does not have driver. [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:124]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd-242.4 with 1st driver pin 'uut/RD1[0]' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:242]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd-242.4 with 2nd driver pin 'VCC' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:242]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd-242.4 is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:242]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd-242.4 with 1st driver pin 'uut/RD1[1]' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:242]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd-242.4 with 2nd driver pin 'GND' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:242]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd-242.4 is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:242]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd-242.4 with 1st driver pin 'uut/RD1[2]' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:242]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd-242.4 with 2nd driver pin 'GND' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:242]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd-242.4 is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:242]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd-242.4 with 1st driver pin 'uut/RD1[3]' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:242]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd-242.4 with 2nd driver pin 'GND' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:242]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd-242.4 is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:242]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd-242.4 with 1st driver pin 'uut/RD1[4]' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:242]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd-242.4 with 2nd driver pin 'GND' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:242]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd-242.4 is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:242]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd-242.4 with 1st driver pin 'uut/RD1[5]' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:242]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd-242.4 with 2nd driver pin 'GND' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:242]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd-242.4 is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:242]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd-242.4 with 1st driver pin 'uut/RD1[6]' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:242]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd-242.4 with 2nd driver pin 'GND' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:242]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd-242.4 is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:242]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd-242.4 with 1st driver pin 'uut/RD1[7]' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:242]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd-242.4 with 2nd driver pin 'GND' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:242]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd-242.4 is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:242]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd-242.4 with 1st driver pin 'uut/RD2[0]' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:242]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd-242.4 with 2nd driver pin 'GND' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:242]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd-242.4 is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:242]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd-242.4 with 1st driver pin 'uut/RD2[1]' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:242]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd-242.4 with 2nd driver pin 'VCC' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:242]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd-242.4 is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:242]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd-242.4 with 1st driver pin 'uut/RD2[2]' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:242]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd-242.4 with 2nd driver pin 'GND' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:242]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd-242.4 is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:242]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd-242.4 with 1st driver pin 'uut/RD2[3]' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:242]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd-242.4 with 2nd driver pin 'GND' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:242]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd-242.4 is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:242]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd-242.4 with 1st driver pin 'uut/RD2[4]' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:242]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd-242.4 with 2nd driver pin 'GND' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:242]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd-242.4 is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:242]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd-242.4 with 1st driver pin 'uut/RD2[5]' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:242]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd-242.4 with 2nd driver pin 'GND' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:242]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd-242.4 is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:242]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd-242.4 with 1st driver pin 'uut/RD2[6]' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:242]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd-242.4 with 2nd driver pin 'GND' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:242]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd-242.4 is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:242]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd-242.4 with 1st driver pin 'uut/RD2[7]' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:242]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd-242.4 with 2nd driver pin 'GND' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:242]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd-242.4 is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/main.vhd:242]
+WARNING: [Synth 8-7129] Port instruction[31] in module Decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruction[30] in module Decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruction[29] in module Decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruction[28] in module Decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruction[27] in module Decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruction[26] in module Decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruction[25] in module Decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruction[24] in module Decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruction[7] in module Decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruction[6] in module Decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruction[5] in module Decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruction[4] in module Decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruction[3] in module Decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruction[2] in module Decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruction[1] in module Decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruction[0] in module Decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port we in module Decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[15] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[14] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[13] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[12] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[11] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[10] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[9] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[8] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[7] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[6] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[5] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[4] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[3] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[2] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[1] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[0] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[15] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[14] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[13] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[12] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[11] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[10] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[9] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[8] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[7] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[6] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[5] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[4] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[3] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[2] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[1] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[0] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btn[4] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btn[3] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btn[2] in module main is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1920.438 ; gain = 501.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1920.438 ; gain = 501.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1920.438 ; gain = 501.324
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1920.438 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Nexys4DDR_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/main_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/main_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1998.141 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1998.141 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:17 . Memory (MB): peak = 1998.141 ; gain = 579.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:17 . Memory (MB): peak = 1998.141 ; gain = 579.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:04 ; elapsed = 00:00:17 . Memory (MB): peak = 1998.141 ; gain = 579.027
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6040] Register ProgCounter_reg_rep driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+WARNING: [Synth 8-327] inferring latch for variable 'data_out_reg' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/X86_Registers.vhd:103]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUResAux_reg' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/ALU_component.vhd:64]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:17 . Memory (MB): peak = 1998.141 ; gain = 579.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   3 Input    8 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                8 Bit    Registers := 11    
+	                1 Bit    Registers := 7     
++---RAMs : 
+	               2K Bit	(256 X 8 bit)          RAMs := 1     
++---Muxes : 
+	   8 Input    8 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 5     
+	   6 Input    8 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 1     
+	   5 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 8     
+	   9 Input    1 Bit        Muxes := 8     
+	   5 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-6040] Register IF_sim/ProgCounter_reg_rep driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+WARNING: [Synth 8-7129] Port sw[15] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[14] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[13] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[12] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[11] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[10] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[9] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[8] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[7] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[6] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[5] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[4] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[3] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[2] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[1] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[0] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[15] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[14] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[13] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[12] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[11] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[10] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[9] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[8] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[7] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[6] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[5] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[4] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[3] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[2] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[1] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[0] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btn[4] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btn[3] in module main is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btn[2] in module main is either unconnected or has no load
+WARNING: [Synth 8-6014] Unused sequential element uut/data_memory_instance/memory_reg was removed. 
+WARNING: [Synth 8-3332] Sequential element (uut/registers/data_out_reg[7]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (uut/registers/data_out_reg[6]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (uut/registers/data_out_reg[5]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (uut/registers/data_out_reg[4]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (uut/registers/data_out_reg[3]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (uut/registers/data_out_reg[2]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (uut/registers/data_out_reg[1]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (uut/registers/data_out_reg[0]) is unused and will be removed from module main.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin RD1[7] with 1st driver pin 'uut/RD1_inferred/RD1[7]' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/Decode.vhd:199]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin RD1[7] with 2nd driver pin 'GND' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/Decode.vhd:199]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net RD1[7] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/Decode.vhd:199]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin RD1[6] with 1st driver pin 'uut/RD1_inferred/RD1[6]' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/Decode.vhd:199]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin RD1[6] with 2nd driver pin 'GND' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/Decode.vhd:199]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net RD1[6] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/Decode.vhd:199]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin RD1[5] with 1st driver pin 'uut/RD1_inferred/RD1[5]' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/Decode.vhd:199]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin RD1[5] with 2nd driver pin 'GND' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/Decode.vhd:199]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net RD1[5] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/Decode.vhd:199]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin RD1[4] with 1st driver pin 'uut/RD1_inferred/RD1[4]' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/Decode.vhd:199]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin RD1[4] with 2nd driver pin 'GND' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/Decode.vhd:199]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net RD1[4] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/Decode.vhd:199]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin RD1[3] with 1st driver pin 'uut/RD1_inferred/RD1[3]' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/Decode.vhd:199]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin RD1[3] with 2nd driver pin 'GND' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/Decode.vhd:199]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net RD1[3] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/Decode.vhd:199]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin RD1[2] with 1st driver pin 'uut/RD1_inferred/RD1[2]' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/Decode.vhd:199]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin RD1[2] with 2nd driver pin 'GND' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/Decode.vhd:199]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net RD1[2] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/Decode.vhd:199]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin RD1[1] with 1st driver pin 'uut/RD1_inferred/RD1[1]' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/Decode.vhd:199]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin RD1[1] with 2nd driver pin 'GND' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/Decode.vhd:199]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net RD1[1] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/Decode.vhd:199]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin RD1[0] with 1st driver pin 'uut/RD1_inferred/RD1[0]' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/Decode.vhd:199]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin RD1[0] with 2nd driver pin 'VCC' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/Decode.vhd:199]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net RD1[0] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/Decode.vhd:199]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin RD2[7] with 1st driver pin 'uut/RD2_inferred/RD2[7]' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/Decode.vhd:210]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin RD2[7] with 2nd driver pin 'GND' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/Decode.vhd:210]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net RD2[7] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/Decode.vhd:210]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin RD2[6] with 1st driver pin 'uut/RD2_inferred/RD2[6]' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/Decode.vhd:210]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin RD2[6] with 2nd driver pin 'GND' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/Decode.vhd:210]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net RD2[6] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/Decode.vhd:210]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin RD2[5] with 1st driver pin 'uut/RD2_inferred/RD2[5]' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/Decode.vhd:210]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin RD2[5] with 2nd driver pin 'GND' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/Decode.vhd:210]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net RD2[5] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/Decode.vhd:210]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin RD2[4] with 1st driver pin 'uut/RD2_inferred/RD2[4]' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/Decode.vhd:210]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin RD2[4] with 2nd driver pin 'GND' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/Decode.vhd:210]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net RD2[4] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/Decode.vhd:210]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin RD2[3] with 1st driver pin 'uut/RD2_inferred/RD2[3]' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/Decode.vhd:210]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin RD2[3] with 2nd driver pin 'GND' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/Decode.vhd:210]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net RD2[3] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/Decode.vhd:210]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin RD2[2] with 1st driver pin 'uut/RD2_inferred/RD2[2]' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/Decode.vhd:210]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin RD2[2] with 2nd driver pin 'GND' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/Decode.vhd:210]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net RD2[2] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/Decode.vhd:210]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin RD2[1] with 1st driver pin 'uut/RD2_inferred/RD2[1]' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/Decode.vhd:210]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin RD2[1] with 2nd driver pin 'VCC' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/Decode.vhd:210]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net RD2[1] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/Decode.vhd:210]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin RD2[0] with 1st driver pin 'uut/RD2_inferred/RD2[0]' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/Decode.vhd:210]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin RD2[0] with 2nd driver pin 'GND' [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/Decode.vhd:210]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net RD2[0] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.srcs/sources_1/new/Decode.vhd:210]
+WARNING: [Synth 8-3332] Sequential element (execute_sim/ALUResAux_reg[7]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (execute_sim/ALUResAux_reg[6]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (execute_sim/ALUResAux_reg[5]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (execute_sim/ALUResAux_reg[4]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (execute_sim/ALUResAux_reg[3]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (execute_sim/ALUResAux_reg[2]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (execute_sim/ALUResAux_reg[1]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (execute_sim/ALUResAux_reg[0]) is unused and will be removed from module main.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:04 ; elapsed = 00:00:19 . Memory (MB): peak = 1998.141 ; gain = 579.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|IFetch      | ROM        | 1024x18       | LUT            | 
+|main        | p_0_out    | 1024x18       | LUT            | 
++------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:25 . Memory (MB): peak = 1998.141 ; gain = 579.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:25 . Memory (MB): peak = 1998.141 ; gain = 579.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:06 ; elapsed = 00:00:25 . Memory (MB): peak = 1998.141 ; gain = 579.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:07 ; elapsed = 00:00:29 . Memory (MB): peak = 1998.141 ; gain = 579.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:07 ; elapsed = 00:00:29 . Memory (MB): peak = 1998.141 ; gain = 579.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:07 ; elapsed = 00:00:29 . Memory (MB): peak = 1998.141 ; gain = 579.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:07 ; elapsed = 00:00:29 . Memory (MB): peak = 1998.141 ; gain = 579.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:29 . Memory (MB): peak = 1998.141 ; gain = 579.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:07 ; elapsed = 00:00:29 . Memory (MB): peak = 1998.141 ; gain = 579.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     4|
+|3     |LUT1   |     1|
+|4     |LUT3   |    13|
+|5     |FDRE   |    16|
+|6     |IBUF   |     1|
+|7     |OBUF   |    15|
+|8     |OBUFT  |    32|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:07 ; elapsed = 00:00:29 . Memory (MB): peak = 1998.141 ; gain = 579.027
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 48 critical warnings and 57 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:04 ; elapsed = 00:00:27 . Memory (MB): peak = 1998.141 ; gain = 501.324
+Synthesis Optimization Complete : Time (s): cpu = 00:00:07 ; elapsed = 00:00:29 . Memory (MB): peak = 1998.141 ; gain = 579.027
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1998.141 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1998.141 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 43d5dd94
+INFO: [Common 17-83] Releasing license: Synthesis
+53 Infos, 152 Warnings, 96 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:34 . Memory (MB): peak = 1998.141 ; gain = 973.770
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Users/sirbu/OneDrive/Desktop/Cauta/Faculta 3.1/SSC/Proiect/UCP pipeline x86/UCP pipeline x86.runs/synth_1/main.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file main_utilization_synth.rpt -pb main_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Jan 14 19:36:25 2024...

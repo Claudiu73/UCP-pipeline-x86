@@ -1,0 +1,14 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../UCP pipeline x86.srcs/sources_1/new/ALU_component.vhd" \
+"../../../../UCP pipeline x86.srcs/sources_1/new/DataMemory.vhd" \
+"../../../../UCP pipeline x86.srcs/sources_1/new/Decode.vhd" \
+"../../../../UCP pipeline x86.srcs/sources_1/new/IFetch.vhd" \
+"../../../../UCP pipeline x86.srcs/sources_1/new/MPG.vhd" \
+"../../../../UCP pipeline x86.srcs/sources_1/new/SSD.vhd" \
+"../../../../UCP pipeline x86.srcs/sources_1/new/WriteBack.vhd" \
+"../../../../UCP pipeline x86.srcs/sources_1/new/X86_Registers.vhd" \
+"../../../../UCP pipeline x86.srcs/sources_1/new/main.vhd" \
+
+# Do not sort compile order
+nosort
